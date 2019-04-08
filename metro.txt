@@ -1,0 +1,7 @@
+"metro"
+{
+	"base"		"nutscript"
+	"title"		"NS - Metro 2033"
+	"author"	"Voluntary Gaming"
+	"menusystem" "1"
+}

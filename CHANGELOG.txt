@@ -1,0 +1,288 @@
+OFFICIAL CHANGELOG
+
+Pilot 10/15/2018:
+	-Added sh_character.lua with new sex and age character variables
+	-Added sh_database.lua to add those new character variables in the MySQL tables
+	-Changed sh_schema.lua to include the new files
+	-Changed languages/sh_english.lua to include language for incorrect age/sex
+	-Changed all faction files to need a whitelist (except Dweller)
+	-Custom intro to derma/cl_intro.lua
+	-Added new character variables to derma/cl_information.lua
+	
+dickmosi 10/15/2018:
+	- Changed Medical, Flashlight and Ammo Models
+	- Improved medical item descriptions
+	- Remade all Scrap Items
+	- Added "Rare" spawngroup to WorldItemSpawner
+	- Changed Shank Weapon (name, desc, size)
+	- Shank now craftable via EmptyBottle Scrap Item
+	- Added plySmash line in Language file
+	- Added Ration Item (Gives Beans and Water)
+	- Added Bags (Pouch, Satchel and Backpack)
+
+Pilot 10/16/2018:
+	-Added sv_database.lua to libs folder
+	-Edited sh_schema.lua
+
+Otunga 16/10/2018
+	- Added first version of the passport plugin
+	- Added a note about editing files
+	- Added materials and font resources
+	- Edited sh_schema.lua to include the resources for passport stuff
+	- Fixed up some passport plugin stuff and added reich, hansa & redline passport items
+	
+dickmosi 10/16/2018:
+	- Added/Finished Drugs
+	- Added and Configured CookFood
+	- Deleted old food and food base
+	- Added and Configured BadAir
+	- Edited sh_schema.lua
+	- Added PacOutfits (Ushanka, Hockey Mask and a helmet)
+	- Improved Ammo Icons (545, shotgun, 44 and 762)
+
+Pilot 10/17/2018:
+	-Deleted old passports from items folder
+
+dickmosi 10/23/2018:
+	-Added Makarov and Chaser13 and their respective ammo as items
+	-Ammo Item Changes (Names, Models, Amount, Descriptions fixed)
+	-Weapon Item Changes (Consistent descriptions, Models)
+	-Removed Note Entity from Radio Plugin (Breaks note plugin)
+	-CookFood improvements (MustCook food, sh_plugin changes)
+
+Pilot 10/26/2018:
+	-Added 3DVoice Plugin
+	-Added extra sitting animations
+	-Added Adminchat
+	-Added moods
+	-Added playerconnect notification
+	-Updated Intro
+
+Pilot 10/27/2018:
+	-Added restrictions to PAC3
+	-Added PAC3 as necessary addon to install
+	-Added main menu additions including backgrounds
+
+Pilot 10/28/2018:
+	-Added new passport system
+	-Added new head bobbing animations
+	
+dickmosi 10/28/2018:
+	-Created The Bible
+	-Updated sh_schema.lua (Workshop and Content folder additions)
+	-Updated drug and cookfood bases
+	-Added lean animation (/actlean)
+	-Added Map item
+	
+dickmosi 10/29/2018:
+	-Replaced content/sound/gmsk_in and gmsk_out with quieter versions
+	-BadAir tweaked (Uses different gasmask overlay now)
+	-Cookfood tweaked
+	-sh_schema updated
+	-Various Item tweaks
+	-Added Reich&Redline uniforms to outfits and also changed their default faction models
+
+Pilot 10/29/2018:
+	-Added meta folder and made changes to sh_schema.lua to allow disabling plugins
+	-Disabled crosshair
+	-Deleted sex as a character customization option
+	-Lowered the bounciness of walking from realistic.lua plugin
+
+Pilot 10/30/2018:
+	-Fudge rolling prototype added
+	-Edits to fudge rolling for new items
+	-Updates to the passport + passport images
+	-Added cassette plugin, sounds, and changed sh_schema.lua to download the music
+	
+dickmosi 10/30/2018:
+	-Changed sh_hansa to sh_hanza in factions folder (and updated the default models)
+	-Added Hazmat clothing and Hanza soldier clothing
+
+Pilot 10/31/2018:
+	-Added trader faction
+	-Added meatpile for butchers
+
+Pilot 11/01/2018:
+	-Added chance to identify meat by pressing E
+	-Made meat item more realistic (Changed the model, opening sound, and function identifier)
+	-Added a Destroyer plugin which basically allows players to destroy items in a trash compactor
+	-Overhauled main menu
+	-New BEBAS font
+	
+dickmosi 11/01/2018:
+	-Added some extra cassettes
+	-Added a Desert Deagle+Ammo
+	-Added all the "fixed" weapons into the Gamemode (entities/weapons/)
+	-Added Hazmat suits to BadAir plugin and changed some sh_plugin stuff
+	-Added Stash Plugin (might be handy and it's not abusable.. I think)
+
+Pilot 11/02/2018:
+	-Fixed all problems with the menu
+	-Fixed a bug in fudgerolling
+	-New intro
+	-Fixed moods bug
+	
+dickmosi 11/02/2018:
+	-Added and configured Grenades plugin (Adds Teargas - works with badair, flare and beacon)
+	-Fixed Tying plugin (You can now search players /charsearch and added some language stuff to sh_plugin)
+	-Added Shootlock plugin + map item updated
+
+Pilot 11/03/2018:
+	-Balances to fudgerolling
+	-Minor intro + menu changes
+	-Fixed fudgerolling bug for armor
+	-Fixed passport naming convention on sh_schema that caused files to not download for players
+	-Changed scoreboard to just put everyone on one ambiguous list
+	
+dickmosi 11/04/2018:
+	-entities/weapons/ additions and changes
+	-Various Item Changes
+	-Changed default Militia models and added Militia_guard outfit
+
+Pilot 11/04/2018:
+	-Updates to fudgerolling for new armor
+	
+dickmosi 11/05/2018:
+	-Added nerfed versions of all melee weapons to entities/weapons/ folder (Includes disabling shove on HL2 Melee Weapons)
+	-Added "Custom" Metal Bat weapon and item also added Guitar and Meat Hook into weapons folder
+	-Changed Stalker Knife/Trench Knife so it now works with Meat Pile
+	-Some Cookfood plugin additions/changes
+	-Added Some Drugs and tweaked a few item bases
+	-Fixed typo on line:183 in fudgeroll plugin (entiy instead of entity)
+	
+dickmosi 11/05/2018:
+	-Disabled "Storage" plugin in sh_schema (Useless and abusable)
+	-Improved Scrap Base and removed pointless plyScrap and plySmash lines from langauges/sh_english.lua
+	-Tweaked worlditemspawner plugin
+	-Added PropDesc and CommunityCommands plugin (1. Admins can give props a description for quests/events and 2. adds /group and /content commands)
+
+Pilot 11/08/2018:
+	-Added content for new plugins
+
+Pilot 11/15/2018:
+	-Added camera plugin
+	-Added manual editing for passports
+	-Removed age for character creation
+	-Added hunger for fudge rolling and better command names
+
+Pilot 11/16/2018:
+	-Added fixed cookfood plugin
+	-updated languages/sh_english.lua by removing old character creation lang and adding cookfood stuff
+	
+dickmosi 11/16/2018:
+	-Numerous tweaks to cookfood
+
+Pilot 11/18/2018:
+	-Hotfix cookfood plugin
+	-New F1 menu layout
+
+Pilot 11/19/2018:
+	-You can now rotate your character by holding down the left mouse button in F1
+	
+dickmosi 11/19/2018:
+	-Edited _oldpluginfix to be compatible with Moderator Addon
+	-Sh_Schema now includes hooks directory
+	-Sv_Hooks changes (Disabled Sprays, Factions now spawn with various items/gear)
+	-Cookfood changes (items, language, no longer includes drinks for no reason but that's my bad)
+	
+dickmosi 11/20/2018:
+	-Added weapon_baton and item
+	-Added missing weapons in fudgeroll plugin
+
+Pilot 11/22/2018:
+	-Fixed endurance problem with fudgeroll
+	-New photograph model
+
+Pilot 11/23/2018:
+	-New word values for fudgeroll
+	-New notes plugin called "paper"
+	
+dickmosi 11/23/2018:
+	-100% fixed the CookFood plugin
+	-Added lockpick stuff to sh_english
+
+Pilot 11/29/2018:
+	-Fixed a bug with the camera
+
+Pilot 11/30/2018:
+	-Fixed fudgerolling notifications and minor errors
+	
+dickmosi 12/3/2018:
+	-Fixed Trench Knife
+	-Decreased size of /event's text
+	-Decreased size of /yell's text
+	-Doubled hungerAmount of all food
+
+Pilot 12/3/2018:
+	-Temporarily removed headbob
+	-Brought back crosshair
+	-Removed weird indent in fudgerolling
+	-Fixed language variables in sh_english.lua
+	-Nosalis + Watchers now drop creature meat with npcdrop plugin
+	-Added new creature meat item
+	-Added salary to Metro, Militia, and Golden Snakes factions
+	-Removed 3DVoice it was useless
+	-Nosalis + Watchers drop creature meat, also added to meatpile
+
+Pilot 12/7/2018:
+	-Added Leninsky passport
+
+Pilot 12/8/2018:
+	-Added command to allow admins to check other's inventories
+	-Added ability to add extra information on a player in their passport
+
+Pilot 12/9/2018:
+	-Fixed F1 issue that untoggled people already in thirdperson
+	-Better playerconnected plugin
+	-Supposed fix for /checkinventory command
+	-Fixed F1 issue that kept people in classic mode when spinning your character
+	-Fixed font for intro
+	-/checkinventory now works (schema/sh_commands.lua)
+	-Allow players to use F4 to open inventory (plugins/f4inventory.lua)
+
+Pilot 12/10/2018:
+	-New stash plugin
+	-Simple /adminspawnmenu to allow admins to see all items and spawn them
+
+Pilot 12/13/2018:
+	-Removed pacflag plugin and realistic and edited sh_schema.lua
+
+Pilot 12/14/2018:
+	-Added dodging mechanic to combat rolling based on controlled stamina and food
+	-made it so that items dont sometimes spawn under the ground when using /adminspawnmenu
+
+Pilot 12/16/2018:
+	-New passport plugin v1
+
+Pilot 12/17/2018:
+	-Fixed checking passports in world
+	-Cosmetic fixes to passport
+	-Cassette's should be working again omg
+
+Pilot 12/18/2018:
+	-Junk fix?
+	-Custom footsteps
+	-Changed footsteps to be run only
+
+Pilot 12/30/2018:
+	-New faction system
+	-Default dweller class
+	-A bunch of fixes for OOC color, passports, setting rank, etc.
+
+Pilot 1/1/2019:
+	-Actually fixed passports
+	-Actually fixed OOC color
+	-Actually fixed Admin ESP color
+	-Made it easier to see what you're flagged up on.
+	-Removed /setrank system
+	
+dickmosi 1/4/2019:
+	-Added fixes for new models
+	-Updated workshop collection in sh_schema
+	
+dickmosi 1/5/2019:
+	-Removed FACTION.pay and made it so everything uses Class.Pay
+	-Added new classes (Doctor, Vagrant and Bartender)
+	-Tweaked/nerfed all salaries, everyone is now paid by the hour
+	-Tweaked default class in hooks/sv_hook to comply with newly added classes
+	-Changed the list of default models
