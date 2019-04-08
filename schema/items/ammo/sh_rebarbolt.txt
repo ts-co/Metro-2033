@@ -1,0 +1,6 @@
+ITEM.name = "Quiver of Rebar Bolts"
+ITEM.model = "models/Items/CrossbowRounds.mdl"
+ITEM.ammo = "crossbow"
+ITEM.ammoAmount = 5
+ITEM.desc = "A quiver that contains 5 Rebar bolts"
+ITEM.price = 80
