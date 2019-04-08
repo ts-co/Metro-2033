@@ -1,0 +1,21 @@
+[NutScript] Attempt to index unknown item 'vsv_scope'
+
+[ERROR] gamemodes/nutscript/gamemode/core/libs/sh_item.lua:471: attempt to index local 'item' (a nil value)
+  1. unknown - gamemodes/nutscript/gamemode/core/libs/sh_item.lua:471
+   2. func - gamemodes/nutscript/gamemode/core/libs/thirdparty/sh_netstream2.lua:155
+    3. unknown - lua/includes/extensions/net.lua:32
+	
+
+ITEM.name = "Scoped VSV"
+ITEM.desc = "A fast and accurate Automatic Sniper Rifle that fires 5.45mm Rounds"
+ITEM.model = "models/arxweapon/vsv.mdl"
+ITEM.class = "m9k_mrp_vsv_scope"
+ITEM.weaponCategory = "primary"
+ITEM.width = 3
+ITEM.height = 2
+ITEM.price = 300
+
+
+
+
+

@@ -1,0 +1,9 @@
+ITEM.name = "Bandage"
+ITEM.model = "models/stalker/item/medical/bandage.mdl"
+ITEM.category = "Medical"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.healAmount = 20
+ITEM.healSeconds = 10
+ITEM.price = 10
+ITEM.desc = "A sterilised white bandage. Heals " .. ITEM.healAmount .. "HP over " .. ITEM.healSeconds .." seconds."
