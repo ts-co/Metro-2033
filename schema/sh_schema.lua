@@ -2,6 +2,8 @@ SCHEMA.name = "Metro 2033"
 SCHEMA.author = "Pilot & Dickmosi"
 SCHEMA.desc = "Serious Roleplay"
 
+--USE THIS COLLECTION: https://steamcommunity.com/sharedfiles/filedetails/?id=1619229510
+
 nut.currency.set("", "bullet", "bullets")
 
 --Serverside
