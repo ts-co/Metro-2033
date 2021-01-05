@@ -9,9 +9,11 @@ if (SERVER) then
 	util.AddNetworkString("adminSpawnItem")
 
 	net.Receive("adminSpawnItem", function(len, client)
-		local name = net.ReadString()
+		if (!client:IsAdmin()) then return end
+		
+		local uniqueID = net.ReadString()
 		for k, v in pairs(nut.item.list) do
-			if v.name == name then
+			if v.uniqueID == uniqueID then
 				nut.item.spawn(v.uniqueID, client:GetShootPos() + client:GetAimVector()*84 + Vector(0, 0, 16))
 				nut.log.add(client:getChar():getName(), "has spawned ", v.name)
 			end
@@ -63,7 +65,7 @@ if (CLIENT) then
 					item:SizeToContents()
 					item.DoClick = function()
 						net.Start("adminSpawnItem")
-						net.WriteString(v.name)
+						net.WriteString(v.uniqueID)
 						net.SendToServer()
 						surface.PlaySound("buttons/button14.wav")
 					end
